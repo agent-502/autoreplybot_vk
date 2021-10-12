@@ -41,6 +41,6 @@ g_token = '' - Group Token/токен группы бота
 запустить bot_user.py (для пользователя)
 запустить bot_group.py (для группы)
 ```
-[вы можете посмотреть это видео](video.com)
+[вы можете посмотреть это видео](https://disk.yandex.com/i/wwoQ00RPGBydpw)
   
 [Мой вк](https://vk.com/a_502)
