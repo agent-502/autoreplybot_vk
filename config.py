@@ -1,7 +1,7 @@
 # для страницы
-u_admins = [552355817]
-bot_id = 552355817
-u_token = '5890358a3293b4ec65125b8d2c64deafe02201a9f2fdfbf1bd69682108efa590bc0c3700bbb5af5596aa9'
+u_admins = []
+bot_id = 
+u_token = ''
 
 # для группы
 g_admins = []
@@ -9,8 +9,8 @@ group_id = 0
 g_token = ''
 
 # комнады
-hate = ['+Сообщи', '+sms']
-unhate = ['-Сообщи', '-sms']
+hate = ['+смс', '+sms']
+unhate = ['-смс', '-sms']
 cooldown = ['!кд', '!cd']
 
 # префиксы
