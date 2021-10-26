@@ -108,11 +108,11 @@ def commands():
                                         if not m.is_message_user_hatelisted(user):
                                             message_user_ids.append(user)
                                             m.insert_message_hatelist(user)
-                                            send_msg(event.peer_id, '✅ User successfully added')
+                                            send_msg(event.peer_id, '✅ User successfully added to the text list')
                                         else:
-                                            send_msg(event.peer_id, '❎ The user is already in the list')
+                                            send_msg(event.peer_id, '❎ The user is already in the text list')
                                     else:
-                                        send_msg(event.peer_id, '❎ Unable to add bot to the  list')
+                                        send_msg(event.peer_id, '❎ Unable to add bot to the text list')
                                 else:
                                     send_msg(event.peer_id, '❎ User not specified')
                             else:
@@ -128,11 +128,11 @@ def commands():
                                         if not m.is_photo_user_hatelisted(user):
                                             photo_user_ids.append(user)
                                             m.insert_photo_hatelist(user)
-                                            send_msg(event.peer_id, '✅ User added to the list')
+                                            send_msg(event.peer_id, '✅ User added to the photo list')
                                         else:
-                                            send_msg(event.peer_id, '❎ User removed from the list')
+                                            send_msg(event.peer_id, '❎ User removed from the photo list')
                                     else:
-                                        send_msg(event.peer_id, '❎ Unable to add bot to the list')
+                                        send_msg(event.peer_id, '❎ Unable to add bot to the photo list')
                                 else:
                                     send_msg(event.peer_id, '❎ User not specified')
                             else:
@@ -167,9 +167,9 @@ def commands():
                                     if m.is_photo_user_hatelisted(user):
                                         photo_user_ids.remove(user)
                                         m.delete_photo_hatelist(user)
-                                        send_msg(event.peer_id, '✅ User added to the list')
+                                        send_msg(event.peer_id, '✅ User removed from the photo list')
                                     else:
-                                        send_msg(event.peer_id, '❎ User removed from the list')
+                                        send_msg(event.peer_id, '❎ User is missing from the photo list')
                                 else:
                                     send_msg(event.peer_id, '❎ User not specified')
                             else:
